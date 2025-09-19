@@ -1,9 +1,4 @@
-/*Daniel Mason 04/26/2025*/
-/*I adapted this project from Adapted from https://javascript30.com/ 5 flex panels gallery as well as https://javascript30.com/ 16 CSS Text Shadow Mouse Move Effect and https://javascript30.com/ 24 Sticky Nav to complete a working gallery website for my tattoo artist. I combined project 2, project 3 and project 5 and the lessons to improve this site.*/
-/*I changed the color schematic of the "logo" part to match the color of the page.*/
-/*I decided to use CSS Grid to layout the pictures in a consistant way and make it look proffesional.*/
-/*My goal is to add out the images needed to finish the pages associated and create the navigation functionality. I will make clicking the name at the top take you home if visible and then use the nav when it is gone.*/
-
+/*Daniel Mason 09/16/2025*/
 
 html {
     box-sizing: border-box;
@@ -192,3 +187,4 @@ color: white;
     align-items: center;
     padding: none;
 }
+
