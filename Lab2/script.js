@@ -1,6 +1,6 @@
 //Daniel Mason 09/14/2025//
 
-
+//Text Shadow Effect for Header//
 const header = document.querySelector('.header');
 const text = header.querySelector('h1');
 const walk = 25; 
@@ -25,6 +25,8 @@ function shadow(e) {
 
 header.addEventListener('mousemove', shadow);
 
+//Toggle panel class change on click//
+
 $('.panel').on('click',function()
 {$(this).toggleClass('open');
 });
@@ -36,7 +38,7 @@ $('.panel').on('transitionend', function (e) {
 });
 
 
-
+//Sticky Navigation when scrolling//
 const nav = document.querySelector('#main');
 const topOfNav = nav.offsetTop;
 
@@ -53,6 +55,23 @@ else{
 
 }
  
-
-
 window.addEventListener('scroll', fixNav);
+
+$(document).ready(function () {
+  const $picturesSection = $('.pictures');
+
+  const $figures = $picturesSection.find('figure').filter(function () {
+    const captionText = $(this).find('figcaption').text();
+    const datePart = captionText.split('-').pop(); // Get the MM/DD/YYYY part
+    return !isNaN(Date.parse(datePart)); // Only include if valid date
+  });
+
+  const sortedFigures = $figures.sort(function (a, b) {
+    const dateA = new Date($(a).find('figcaption').text().split('-').pop());
+    const dateB = new Date($(b).find('figcaption').text().split('-').pop());
+    return dateB - dateA; // Descending (newest to oldest)
+  });
+
+  $picturesSection.empty().append(sortedFigures);
+});
+
