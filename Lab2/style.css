@@ -175,10 +175,20 @@ transform: translateY(-100%);}
     align-items: center;
     justify-content: center;
     max-width: 100vw;
+    padding: none;
 }
-.pictures > img{
+
+.pictures > figure{
+  padding: none;
+  margin: 0;
+}
+
+.pictures > figure > figcaption{
+color: white;
+}
+.pictures > figure > img{
     max-width: 24vw;
     max-height: 400px;
     align-items: center;
-    padding: 2px;
+    padding: none;
 }
