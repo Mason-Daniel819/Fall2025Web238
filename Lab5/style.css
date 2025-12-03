@@ -1,4 +1,4 @@
-/*Daniel Mason 04/26/2025*/
+/*Daniel Mason 12/3/2025*/
 
 
 html {
@@ -95,7 +95,7 @@ text-transform: uppercase;
   width: 25px;
   height: 3px;
   margin: 5px 0;
-  background: white;          /* adjust to match your design */
+  background: white;          
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -117,9 +117,9 @@ text-transform: uppercase;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: none;             /* hidden until nav has .open */
+  display: none;             
   flex-direction: column;
-  background: #000;          /* match your site background */
+  background: #000;          
   width: 100%;
 }
 
@@ -133,11 +133,6 @@ text-transform: uppercase;
   display: flex;
 }
 
-li.logo {
-  max-width: 100%;
-  overflow: visible;
-  transition: none;
-}
 
 @media (min-width: 769px) {
   /* Hide hamburger on desktop */
@@ -146,23 +141,27 @@ li.logo {
   }
   
   li.logo {
+    flex: 0 0 auto;
+    width: 0;
 max-width: 0;
 overflow: hidden;
 background: rgb(205, 3, 3);
-transition: all .5s;
+transition: max-width .5s, padding .5s;
 font-weight: 600;
 font-size: 30px;
+padding: 0;
 }
 
 .fixed-nav li.logo{
     max-width: 500px;
+
 }
 
   /* Show nav horizontally */
   #main ul {
     display: flex;
     flex-direction: row;
-    justify-content: center; /* or space-around/space-between */
+    justify-content: center; 
     align-items: center;
   }
 
@@ -199,8 +198,6 @@ font-size: 30px;
     text-decoration: 3pt black;
     text-align: center;
     align-items: center;
-    /* Safari transitionend event.propertyName === flex */
-    /* Chrome + FF transitionend event.propertyName === flex-grow */
     transition:
       font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
       flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
