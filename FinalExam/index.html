@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Board Web 238 Final</title>
+    <meta name="author" content="drm">
+    <!--Daniel Mason 12/6/2025-->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <section>
+            <H1 class="homeTeam" id="homeName">*Home Team*</H1>
+                <section class="homeScore" id="homeScore">0</section>
+                <div class="buttonGrid">
+                    <button class="minusButton" id="subtract1Home">-1</button>
+                    <button class="addButton" id="add1Home">+1</button>
+                    <button class="minusButton" id="subtract2Home">-2</button>
+                    <button class="addButton" id="add2Home">+2</button>
+                    <button class="minusButton" id="subtract3Home">-3</button>
+                    <button class="addButton" id="add3Home">+3</button>
+                    <button class="minusButton" id="subtract6Home">-6</button>
+                    <button class="addButton" id="add6Home">+6</button>
+                </div>
+        </section>  
+        
+        <div class="timer">
+            <div class="display">
+            <h1 class="display__time-left"></h1>
+            <p class="display__gameOver"></p>
+            <div>
+             <button id="pauseTimer"><img src="assets/Pause.png" alt=""></button>
+            <button id="resumeTimer"><img src="assets/Play.jpg" alt=""></button></div>
+        </div>
+            <div class="timer__controls">
+            <button data-time="300" class="timer__button">5 Minutes</button>
+            <button data-time="360" class="timer__button">6 Minutes</button>
+            <button data-time="600" class="timer__button">10 Minutes</button>
+            <button data-time="900" class="timer__button">15 minutes</button>
+            <button data-time="1200" class="timer__button">20 Minutes</button>
+           
+            <form name="customForm" id="custom">
+                <input type="text" name="minutes" placeholder="# Minutes">
+            </form>
+
+    </div>
+  
+  </div>
+        <section>
+            <H1 class="awayTeam" id="awayName">*Away Team*</H1>
+            <Section class="awayScore" id="awayScore">0</Section>
+                <div class="buttonGrid">
+                    <button class="minusButton" id="subtract1Away">-1</button>
+                    <button class="addButton" id="add1Away">+1</button>
+                    <button class="minusButton" id="subtract2Away">-2</button> 
+                    <button class="addButton" id="add2Away">+2</button>
+                    <button class="minusButton" id="subtract3Away">-3</button>
+                    <button class="addButton" id="add3Away">+3</button>
+                    <button class="minusButton" id="subtract6Away">-6</button>
+                    <button class="addButton" id="add6Away">+6</button>
+                </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
