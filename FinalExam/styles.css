@@ -1,0 +1,211 @@
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 3fr 5fr 3fr;
+}
+
+h1 {
+    border: .1rem solid red;
+    background-color: black;
+    color: red;
+    width: auto;
+    margin: .2rem .2rem;
+    font-size: 5rem;
+    align-items: center;
+    text-align: center;
+    font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+    "ROND" 0;
+}
+
+.homeScore {
+    box-sizing: border-box;
+    background-color: black;
+    color: red;
+    width: 6rem;
+    height: auto;
+    font-size: 4rem;
+    font-family: ;
+    align-items: center;
+    margin:auto auto;
+    text-align: center;
+    font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "ROND" 0;
+
+}
+.awayScore {
+    box-sizing: border-box;
+    background-color: black;
+    color: red;
+    width: 6rem;
+    height: auto;
+    margin:auto auto;
+    font-size: 4rem;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-family: "Doto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "ROND" 0;
+
+}
+.buttonGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+   
+}
+
+.minusButton {
+    background-color: red;
+    font-weight: bolder;font-size: 1.5rem;    width: 40%;
+    margin: auto;
+    margin-bottom: .3rem;
+    border-radius: .25rem;
+}
+.addButton {
+    background-color: greenyellow;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    width: 40%;
+    margin: auto;
+    border-radius: .25rem;
+}
+
+@media(min-width: 700px){
+h1 {
+    width: 75%;
+    margin: auto;
+}
+
+.minusButton{
+    width: 35%;
+    border-radius: .5rem;
+    font-size: 2.25rem;
+}
+
+.addButton{
+    width: 35%;
+    border-radius: .5rem;
+    font-size: 2.25rem;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  background: #1e0378;
+  background-image: url(/assets/Designer.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+}
+
+.display__time-left {
+  font-weight: 100;
+  font-size: 20rem;
+  margin: 0;
+  color: red;
+  text-shadow: 4px 4px 0 rgba(0,0,0,0.05);
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+}
+
+.timer__controls {
+  display: flex;
+  width: 100%;
+  margin: auto auto;
+}
+
+#pauseTimer>img{width: 25px;
+height: 25px;}
+#resumeTimer>img{
+  width: 25px;
+  height: 25px;
+}
+
+
+.timer__controls > * {
+  flex: 1;
+}
+
+.timer__controls form {
+  flex: 1;
+  display: flex;
+  size: 80%;
+}
+
+.timer__controls input {
+  flex: 1;
+  border: 0;
+  padding: 2rem;
+  width: 80%;
+}
+
+.timer__button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background: rgba(0,0,0,0.1);
+  border-bottom: 3px solid rgba(0,0,0,0.2);
+  border-right: 1px solid rgba(0,0,0,0.2);
+  padding: 1rem;
+  font-family: 'Inconsolata', monospace;
+}
+
+.timer__button:hover,
+.timer__button:focus {
+  background: rgba(0,0,0,0.2);
+  outline: 0;
+}
+
+.display {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+}
+
+.display__time-left {
+  background-color: black;
+    color: red;
+    width: 6rem;
+    margin:auto auto;
+    font-size: 6rem;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-family: "Doto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "ROND" 0;
+    width: 25vw;
+}
+
+}
