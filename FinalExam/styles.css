@@ -102,7 +102,7 @@ html {
   box-sizing: border-box;
   font-size: 10px;
   background: #1e0378;
-  background-image: url(Designer.jpg);
+  background-image: url('Designer.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -210,6 +210,7 @@ height: 25px;}
 
 
 }
+
 
 
 
